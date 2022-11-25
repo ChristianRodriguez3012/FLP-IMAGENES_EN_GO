@@ -84,7 +84,7 @@ func main() {
 	//CREAR EL RESULTADO
 	ext := filepath.Ext(IMPORTAR_IMAGEN1)
 	name := strings.TrimSuffix(filepath.Base("OUTPUT"), ext)
-	newImagePath := fmt.Sprintf("%s/%s_SECUENCIAL-EJ2%s", filepath.Dir(imgOut), name, ext)
+	newImagePath := fmt.Sprintf("%s/%s_SECUENCIAL-EJ3%s", filepath.Dir(imgOut), name, ext)
 	fg, err := os.Create(newImagePath)
 	defer fg.Close()
 	check(err)
